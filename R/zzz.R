@@ -27,7 +27,7 @@
 #' @description This is primarily to help with debugging.
 #' @param x optional string. If supplied it should match the name of an object in the package enviroment.
 #' The value of the corresponding variable will be returned. If missing, a list of all objects in the package enviroment.
-#' @note Note that \code{\link{graft}} does not delete objects from the environment. See \code{\link{clear_stack}} for this behavior.
+#' @note Note that \code{\link{graft}} does not delete objects from the environment.
 #' @export
 stack_view<- function(x){
   if(missing(x)) ls(envir = .pkgenv)
